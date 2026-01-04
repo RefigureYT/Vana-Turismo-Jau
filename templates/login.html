@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login - VanaTur Jaú</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='login/login.css') }}">
+</head>
+    <body>
+        <main class="login">
+            <section class="login-card" aria-label="Área de login">
+            <header class="login-card__header">
+                <div class="brand" aria-label="VanaTur Jaú">
+                <div class="brand__mark" aria-hidden="true">VT</div>
+                <div class="brand__text">
+                    <div class="brand__name">VanaTur Jaú</div>
+                    <div class="brand__tagline">Acesso ao painel</div>
+                </div>
+                </div>
+
+                <h1>Entrar</h1>
+                <p class="subtitle">Use seu e-mail e senha para continuar.</p>
+            </header>
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="alerts" aria-live="polite">
+                {% for category, msg in messages %}
+                    <div class="alert {{ category }}" role="alert">{{ msg }}</div>
+                {% endfor %}
+                </div>
+            {% endif %}
+            {% endwith %}
+
+            <form method="post" action="{{ url_for('login.login_post') }}" class="form" novalidate>
+                <div class="field">
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="seu@email.com"
+                    autocomplete="username"
+                    inputmode="email"
+                    required
+                />
+                <small class="hint">Ex.: nome@empresa.com</small>
+                </div>
+
+                <div class="field">
+                <label for="password">Senha</label>
+                <div class="password-wrapper">
+                    <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    autocomplete="current-password"
+                    required
+                    />
+                    <button
+                    type="button"
+                    class="toggle-password"
+                    data-target="password"
+                    aria-label="Mostrar senha"
+                    aria-pressed="false"
+                    >
+                    <span class="toggle-password__text">Mostrar</span>
+                    </button>
+                </div>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn--primary">Entrar</button>
+            </form>
+
+            <footer class="login-card__footer">
+                <span class="footnote">Ao entrar, você confirma que está acessando uma área restrita.</span>
+            </footer>
+            </section>
+        </main>
+
+        <script src="{{ url_for('static', filename='login/login.js') }}"></script>
+    </body>
+</html>

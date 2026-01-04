@@ -1,0 +1,37 @@
+Vana-Turismo-Jau/
+├─ .dirignore
+├─ README.md
+├─ app
+│  ├─ __init__.py
+│  ├─ extensions.py
+│  └─ models
+│     ├─ __init__.py
+│     └─ models.py
+├─ main.py
+├─ package-lock.json
+├─ package.json
+├─ public
+│  └─ static
+│     ├─ home
+│     │  ├─ home.css
+│     │  ├─ home.css.map
+│     │  ├─ home.js
+│     │  ├─ home.js.map
+│     │  ├─ home.scss
+│     │  └─ home.ts
+│     ├─ img
+│     └─ login
+│        ├─ login.css
+│        ├─ login.css.map
+│        ├─ login.js
+│        ├─ login.js.map
+│        ├─ login.scss
+│        └─ login.ts
+├─ routes
+│  ├─ __init__.py
+│  ├─ home.py
+│  └─ login.py
+├─ templates
+│  ├─ home.html
+│  └─ login.html
+└─ tsconfig.json

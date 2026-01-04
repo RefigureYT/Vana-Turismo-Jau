@@ -1,0 +1,9 @@
+node_modules
+__pycache__
+venv
+prompt.txt
+.gitignore
+.env
+mapa_diretorio.ini
+mapa_conteudo.ini
+mapa_visual.txt

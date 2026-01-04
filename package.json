@@ -1,0 +1,30 @@
+{
+  "name": "vana-turismo-jau",
+  "version": "1.0.0",
+  "description": "Um site feito para auxiliar na venda de passagens de viagens para a agência de turismo Vana Tur Jaú",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "watch:ts": "esbuild public/static/**/*.ts --outdir=public/static --bundle --sourcemap --minify --watch",
+    "build:ts": "esbuild public/static/**/*.ts --outdir=public/static --bundle --sourcemap --minify",
+    "check:ts": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RefigureYT/Vana-Turismo-Jau.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RefigureYT/Vana-Turismo-Jau/issues"
+  },
+  "homepage": "https://github.com/RefigureYT/Vana-Turismo-Jau#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "esbuild": "^0.27.2",
+    "glob": "^13.0.0",
+    "sass": "^1.97.1",
+    "typescript": "^5.9.3"
+  }
+}
