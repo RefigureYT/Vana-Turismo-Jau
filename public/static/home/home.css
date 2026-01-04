@@ -1,1 +1,23 @@
-/*# sourceMappingURL=home.css.map */
+@charset "UTF-8";
+/* Home: só conteúdo (base.html já cuida do layout + sidebar) */
+.welcome {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) + 6px);
+  box-shadow: var(--shadow);
+  padding: 22px 22px;
+  max-width: 980px;
+}
+
+.welcome__text h2 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  letter-spacing: -0.2px;
+}
+
+.welcome__text p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.5;
+  font-size: 13px;
+}/*# sourceMappingURL=home.css.map */

@@ -358,3 +358,8 @@ __marimo__/
 
 # Kelvinho
 prompt.txt
+mapa_diretorio.ini
+mapa_conteudo.ini
+mapa_visual.txt
+.dirignore
+gerar_mapa_diretorio.py

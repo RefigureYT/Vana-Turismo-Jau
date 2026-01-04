@@ -1,6 +1,6 @@
 // public/static/login/login.ts
 
-function qs<T extends Element>(sel: string, root: ParentNode = document): T | null {
+export function qs<T extends Element>(sel: string, root: ParentNode = document): T | null {
     return root.querySelector(sel) as T | null;
 }
 

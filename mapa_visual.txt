@@ -1,5 +1,6 @@
 Vana-Turismo-Jau/
 ├─ .dirignore
+├─ .gitattributes
 ├─ README.md
 ├─ app
 │  ├─ __init__.py
@@ -12,6 +13,13 @@ Vana-Turismo-Jau/
 ├─ package.json
 ├─ public
 │  └─ static
+│     ├─ base
+│     │  ├─ base.css
+│     │  ├─ base.css.map
+│     │  ├─ base.js
+│     │  ├─ base.js.map
+│     │  ├─ base.scss
+│     │  └─ base.ts
 │     ├─ home
 │     │  ├─ home.css
 │     │  ├─ home.css.map
@@ -20,18 +28,28 @@ Vana-Turismo-Jau/
 │     │  ├─ home.scss
 │     │  └─ home.ts
 │     ├─ img
-│     └─ login
-│        ├─ login.css
-│        ├─ login.css.map
-│        ├─ login.js
-│        ├─ login.js.map
-│        ├─ login.scss
-│        └─ login.ts
+│     ├─ login
+│     │  ├─ login.css
+│     │  ├─ login.css.map
+│     │  ├─ login.js
+│     │  ├─ login.js.map
+│     │  ├─ login.scss
+│     │  └─ login.ts
+│     └─ sign_user
+│        ├─ sign_user.css
+│        ├─ sign_user.css.map
+│        ├─ sign_user.js
+│        ├─ sign_user.js.map
+│        ├─ sign_user.scss
+│        └─ sign_user.ts
 ├─ routes
 │  ├─ __init__.py
 │  ├─ home.py
-│  └─ login.py
+│  ├─ login.py
+│  └─ sign_user.py
 ├─ templates
+│  ├─ base.html
 │  ├─ home.html
-│  └─ login.html
+│  ├─ login.html
+│  └─ sign_user.html
 └─ tsconfig.json

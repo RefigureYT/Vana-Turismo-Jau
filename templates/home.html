@@ -1,17 +1,20 @@
-<!doctype html>
-<html lang="pt-br">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Home - VanaTur Jaú</title>
+{% extends "base.html" %}
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='home/home.css') }}">
-    <script type="module" src="{{ url_for('static', filename='home/home.js') }}"></script>
-</head>
-    <body>
-        <h1>Home</h1>
-        <p>Logado ✅</p>
+{% block title %}Home - VanaTur Jaú{% endblock %}
 
-        <p><a href="{{ url_for('login.logout') }}">Sair</a></p>
-    </body>
-</html>
+{% block extra_head %}
+<!-- CSS específico da Home (sem JS aqui) -->
+<link rel="stylesheet" href="{{ url_for('static', filename='home/home.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="welcome">
+    <div class="welcome__text">
+        <h2>Bem-vindo, {{ _user_label|e }} 👋</h2>
+        <p>
+            Use a barra lateral para navegar até a área que você precisa.
+            As seções (viagens, pesquisa, etc.) serão liberadas em breve.
+        </p>
+    </div>
+</section>
+{% endblock %}
